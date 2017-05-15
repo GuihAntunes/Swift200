@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cm5-Ae-eba">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="jiggler.ttf">
+            <string>BudmoJiggler</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Tela Inicial View Controller-->
+        <scene sceneID="f5i-Pt-nU2">
+            <objects>
+                <viewController id="cm5-Ae-eba" customClass="TelaInicialViewController" customModule="Swift200_Day7_1_DatePicker_AlertViewController_Date" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fWc-QP-OYl"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ffo-AJ-P2W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fdl-9u-yqC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="eMe-Bm-8sf"/>
+                            <visualEffectView opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WHT-SM-BtC">
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="UZM-a9-Vxq">
+                                    <frame key="frameInset"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qQ4-o8-Ea4">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mFK-Xk-FCl">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTh-i6-Uuh">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="-94631754.120429993">
+                                            <!--1998-01-01 17:24:05 +0000-->
+                                        </date>
+                                        <date key="minimumDate" timeIntervalSinceReferenceDate="-3187256012">
+                                            <!--1900-01-01 11:06:28 +0000-->
+                                        </date>
+                                        <date key="maximumDate" timeIntervalSinceReferenceDate="473338800">
+                                            <!--2016-01-01 11:00:00 +0000-->
+                                        </date>
+                                        <locale key="locale" localeIdentifier="pt_BR"/>
+                                    </datePicker>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="fTh-i6-Uuh" secondAttribute="bottom" constant="15" id="0vW-Hs-8bE"/>
+                                    <constraint firstItem="mFK-Xk-FCl" firstAttribute="leading" secondItem="qQ4-o8-Ea4" secondAttribute="leading" constant="15" id="7Ep-zZ-D0u"/>
+                                    <constraint firstAttribute="trailing" secondItem="fTh-i6-Uuh" secondAttribute="trailing" constant="15" id="7oY-Vh-GpI"/>
+                                    <constraint firstAttribute="bottom" secondItem="mFK-Xk-FCl" secondAttribute="bottom" constant="15" id="PQl-0Q-SPM"/>
+                                    <constraint firstItem="fTh-i6-Uuh" firstAttribute="top" secondItem="qQ4-o8-Ea4" secondAttribute="top" constant="15" id="TXN-N9-2ay"/>
+                                    <constraint firstAttribute="height" constant="220" id="UKF-PR-dth"/>
+                                    <constraint firstItem="fTh-i6-Uuh" firstAttribute="leading" secondItem="qQ4-o8-Ea4" secondAttribute="leading" constant="15" id="Z9H-4l-jyo"/>
+                                    <constraint firstItem="mFK-Xk-FCl" firstAttribute="top" secondItem="qQ4-o8-Ea4" secondAttribute="top" constant="15" id="fsL-Fi-eTw"/>
+                                    <constraint firstAttribute="width" constant="425" id="pSc-bV-Jf3"/>
+                                    <constraint firstAttribute="trailing" secondItem="mFK-Xk-FCl" secondAttribute="trailing" constant="15" id="qH2-A5-ew4"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUAL SUA DATA DE NASCIMENTO?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ho2-kB-7nn">
+                                <fontDescription key="fontDescription" name="BudmoJiggler" family="Budmo Jiggler" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9VH-54-Bma">
+                                <color key="backgroundColor" red="0.23104345798492432" green="0.59902667999267578" blue="0.9892844557762146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="425" id="bEU-Ou-8yk"/>
+                                    <constraint firstAttribute="height" constant="40" id="iHs-tM-hlF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BudmoJiggler" family="Budmo Jiggler" pointSize="17"/>
+                                <state key="normal" title="ENTRAR">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="entrar:" destination="cm5-Ae-eba" eventType="touchUpInside" id="yDZ-tp-NPE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ffo-AJ-P2W" firstAttribute="top" secondItem="WHT-SM-BtC" secondAttribute="bottom" id="310-oW-BhC"/>
+                            <constraint firstItem="Ho2-kB-7nn" firstAttribute="centerX" secondItem="fTh-i6-Uuh" secondAttribute="centerX" id="4od-LT-rpX"/>
+                            <constraint firstItem="eMe-Bm-8sf" firstAttribute="top" secondItem="fdl-9u-yqC" secondAttribute="top" id="AVN-m7-4NH"/>
+                            <constraint firstItem="qQ4-o8-Ea4" firstAttribute="centerX" secondItem="fdl-9u-yqC" secondAttribute="centerX" id="AbT-lY-o6M"/>
+                            <constraint firstItem="WHT-SM-BtC" firstAttribute="top" secondItem="fdl-9u-yqC" secondAttribute="top" id="F1P-Xm-6Wo"/>
+                            <constraint firstItem="9VH-54-Bma" firstAttribute="top" secondItem="fTh-i6-Uuh" secondAttribute="bottom" constant="25" id="SfW-XO-P3T"/>
+                            <constraint firstItem="fTh-i6-Uuh" firstAttribute="top" secondItem="Ho2-kB-7nn" secondAttribute="bottom" constant="35" id="VTk-Vo-4hV"/>
+                            <constraint firstItem="9VH-54-Bma" firstAttribute="centerX" secondItem="fTh-i6-Uuh" secondAttribute="centerX" id="Zyl-HY-tQv"/>
+                            <constraint firstItem="Ffo-AJ-P2W" firstAttribute="top" secondItem="eMe-Bm-8sf" secondAttribute="bottom" id="adA-VE-BS2"/>
+                            <constraint firstAttribute="trailing" secondItem="eMe-Bm-8sf" secondAttribute="trailing" id="cQK-9D-qAi"/>
+                            <constraint firstItem="qQ4-o8-Ea4" firstAttribute="centerY" secondItem="fdl-9u-yqC" secondAttribute="centerY" id="hid-xf-ICe"/>
+                            <constraint firstItem="eMe-Bm-8sf" firstAttribute="leading" secondItem="fdl-9u-yqC" secondAttribute="leading" id="icQ-qJ-JYE"/>
+                            <constraint firstItem="WHT-SM-BtC" firstAttribute="leading" secondItem="fdl-9u-yqC" secondAttribute="leading" id="jZx-9K-Kpt"/>
+                            <constraint firstAttribute="trailing" secondItem="WHT-SM-BtC" secondAttribute="trailing" id="uvL-eO-bgp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="meuDatePicker" destination="fTh-i6-Uuh" id="UA9-Ft-kbI"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="entrar" id="bJU-H1-tVr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ofl-Bt-162" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Vis-k4-Txe" userLabel="Exit" sceneMemberID="exit"/>
+                <customObject id="Sb3-ul-eRQ" customClass="Arredondador" customModule="Swift200_Day7_1_DatePicker_AlertViewController_Date" customModuleProvider="target">
+                    <connections>
+                        <outletCollection property="alvos" destination="qQ4-o8-Ea4" collectionClass="NSMutableArray" id="pzB-NR-UhQ"/>
+                        <outletCollection property="alvos" destination="9VH-54-Bma" collectionClass="NSMutableArray" id="pjj-8c-n5I"/>
+                        <outletCollection property="alvos" destination="fTh-i6-Uuh" collectionClass="NSMutableArray" id="5O6-cc-y6X"/>
+                        <outletCollection property="alvos" destination="fTh-i6-Uuh" collectionClass="NSMutableArray" id="j5I-V6-3DS"/>
+                        <outletCollection property="alvos" destination="mFK-Xk-FCl" collectionClass="NSMutableArray" id="idx-zw-nYI"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="-552.77361319340332" y="136.80000000000001"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Swift200_Day7_1_DatePicker_AlertViewController_Date" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="yGJ-dr-Vir"/>
+                            <visualEffectView opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UaE-TH-1io">
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="6eS-AS-geC">
+                                    <frame key="frameInset"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2U-Dw-LgC">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="GNu-r5-UVc"/>
+                                                <constraint firstAttribute="width" constant="40" id="kT4-OE-Lr4"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="BudmoJiggler" family="Budmo Jiggler" pointSize="22"/>
+                                            <state key="normal" title="X">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="Vis-k4-Txe" kind="unwind" unwindAction="sairWithSender:" id="eCt-TF-j7i"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="k2U-Dw-LgC" firstAttribute="leading" secondItem="6eS-AS-geC" secondAttribute="leading" constant="20" id="6zo-qT-2gU"/>
+                                        <constraint firstItem="k2U-Dw-LgC" firstAttribute="top" secondItem="6eS-AS-geC" secondAttribute="top" constant="20" id="ZGp-GS-vnx"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="casino" translatesAutoresizingMaskIntoConstraints="NO" id="3jW-0i-7ls"/>
+                            <pickerView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FvW-tb-tcN">
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="6lV-IB-eBD"/>
+                                    <constraint firstAttribute="width" constant="200" id="FGM-nH-fdT"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="pU6-fD-fIc"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Pdw-iB-6GZ"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TsT-fw-QYu">
+                                <state key="normal" image="btn-meio-normal"/>
+                                <state key="disabled" image="btn-meio-disabled"/>
+                                <state key="selected" image="btn-meio-pressed"/>
+                                <state key="highlighted" image="btn-meio-pressed"/>
+                                <connections>
+                                    <action selector="tapGira:" destination="BYZ-38-t0r" eventType="touchDown" id="l1f-Jm-XzA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1Q-Jk-enx">
+                                <state key="normal" image="btn-esq-normal"/>
+                                <state key="disabled" image="btn-esq-disabled"/>
+                                <state key="selected" image="btn-esq-pressed"/>
+                                <state key="highlighted" image="btn-esq-pressed"/>
+                                <connections>
+                                    <action selector="tapGira:" destination="BYZ-38-t0r" eventType="touchDown" id="aoe-ox-dU4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvX-da-Ty5">
+                                <state key="normal" image="alavanca-normal"/>
+                                <state key="selected" image="alavanca-pressed"/>
+                                <state key="highlighted" image="alavanca-pressed"/>
+                                <connections>
+                                    <action selector="tapTrocaTodos:" destination="BYZ-38-t0r" eventType="touchDown" id="00c-EC-RAB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6RA-WI-0Yj">
+                                <state key="normal" image="btn-dir-normal"/>
+                                <state key="disabled" image="btn-dir-disabled"/>
+                                <state key="selected" image="btn-dir-pressed"/>
+                                <state key="highlighted" image="btn-dir-pressed"/>
+                                <connections>
+                                    <action selector="tapGira:" destination="BYZ-38-t0r" eventType="touchDown" id="zLh-HB-bD4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yGJ-dr-Vir" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0tC-qR-UGi"/>
+                            <constraint firstItem="TsT-fw-QYu" firstAttribute="top" secondItem="FvW-tb-tcN" secondAttribute="bottom" constant="22" id="4bP-5o-ix6"/>
+                            <constraint firstItem="yGJ-dr-Vir" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5uV-vb-h4E"/>
+                            <constraint firstItem="hvX-da-Ty5" firstAttribute="centerY" secondItem="FvW-tb-tcN" secondAttribute="centerY" id="7I4-OS-epa"/>
+                            <constraint firstItem="TsT-fw-QYu" firstAttribute="centerX" secondItem="FvW-tb-tcN" secondAttribute="centerX" id="DMQ-aU-hQy"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UaE-TH-1io" secondAttribute="bottom" id="Evj-EG-Dc4"/>
+                            <constraint firstItem="3jW-0i-7ls" firstAttribute="centerX" secondItem="yGJ-dr-Vir" secondAttribute="centerX" id="FkH-7w-3R8"/>
+                            <constraint firstItem="3jW-0i-7ls" firstAttribute="centerY" secondItem="yGJ-dr-Vir" secondAttribute="centerY" id="GFf-tq-QSe"/>
+                            <constraint firstItem="6RA-WI-0Yj" firstAttribute="leading" secondItem="TsT-fw-QYu" secondAttribute="trailing" id="Ldu-MQ-Smw"/>
+                            <constraint firstAttribute="trailing" secondItem="yGJ-dr-Vir" secondAttribute="trailing" id="Lhz-24-PAJ"/>
+                            <constraint firstItem="hvX-da-Ty5" firstAttribute="leading" secondItem="FvW-tb-tcN" secondAttribute="trailing" constant="41" id="PBF-jc-efj"/>
+                            <constraint firstAttribute="bottom" secondItem="yGJ-dr-Vir" secondAttribute="bottom" id="S80-sJ-513"/>
+                            <constraint firstItem="TsT-fw-QYu" firstAttribute="centerY" secondItem="H1Q-Jk-enx" secondAttribute="centerY" id="cob-us-Q0v"/>
+                            <constraint firstAttribute="trailing" secondItem="UaE-TH-1io" secondAttribute="trailing" id="dJt-aw-ZRV"/>
+                            <constraint firstItem="FvW-tb-tcN" firstAttribute="centerX" secondItem="yGJ-dr-Vir" secondAttribute="centerX" id="h2D-4Q-V7y"/>
+                            <constraint firstItem="UaE-TH-1io" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iji-o8-1vA"/>
+                            <constraint firstItem="FvW-tb-tcN" firstAttribute="centerY" secondItem="yGJ-dr-Vir" secondAttribute="centerY" id="k5B-eH-c3i"/>
+                            <constraint firstItem="UaE-TH-1io" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mvE-Rx-vTv"/>
+                            <constraint firstItem="TsT-fw-QYu" firstAttribute="centerY" secondItem="6RA-WI-0Yj" secondAttribute="centerY" id="uPn-or-N8N"/>
+                            <constraint firstItem="TsT-fw-QYu" firstAttribute="leading" secondItem="H1Q-Jk-enx" secondAttribute="trailing" id="wj7-S0-27W"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="botaoDois" destination="TsT-fw-QYu" id="FAx-JU-oN2"/>
+                        <outlet property="botaoTres" destination="6RA-WI-0Yj" id="S3N-fr-OJX"/>
+                        <outlet property="botaoUm" destination="H1Q-Jk-enx" id="dZR-KH-KjR"/>
+                        <outlet property="meuPicker" destination="FvW-tb-tcN" id="Yaa-mI-b35"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.18140929535232" y="138.40000000000001"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="alavanca-normal" width="100" height="200"/>
+        <image name="alavanca-pressed" width="100" height="200"/>
+        <image name="btn-dir-disabled" width="110" height="60"/>
+        <image name="btn-dir-normal" width="110" height="60"/>
+        <image name="btn-dir-pressed" width="110" height="60"/>
+        <image name="btn-esq-disabled" width="110" height="60"/>
+        <image name="btn-esq-normal" width="110" height="60"/>
+        <image name="btn-esq-pressed" width="110" height="60"/>
+        <image name="btn-meio-disabled" width="110" height="60"/>
+        <image name="btn-meio-normal" width="110" height="60"/>
+        <image name="btn-meio-pressed" width="110" height="60"/>
+        <image name="casino" width="390" height="500"/>
+        <image name="wallpaper" width="960" height="540"/>
+    </resources>
+</document>

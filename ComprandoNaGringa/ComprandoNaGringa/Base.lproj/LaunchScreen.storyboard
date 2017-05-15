@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="4cF-08-xmp"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comprando na gringa!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bA2-vn-WJn">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="c81-bb-njf"/>
+                                    <constraint firstAttribute="height" constant="75" id="npC-SL-39s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="-2"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="flag-icon" translatesAutoresizingMaskIntoConstraints="NO" id="ovc-DF-p7j">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="DW5-cH-mCO"/>
+                                    <constraint firstAttribute="height" constant="200" id="ear-cS-fI9"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="4cF-08-xmp" secondAttribute="trailing" id="HCU-6s-jMs"/>
+                            <constraint firstItem="4cF-08-xmp" firstAttribute="top" secondItem="ovc-DF-p7j" secondAttribute="bottom" constant="-180" id="IhL-yv-CZm"/>
+                            <constraint firstItem="4cF-08-xmp" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="KIX-5r-5AS"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="4cF-08-xmp" secondAttribute="bottom" id="SET-dD-LEd"/>
+                            <constraint firstItem="ovc-DF-p7j" firstAttribute="centerX" secondItem="4cF-08-xmp" secondAttribute="centerX" id="TFU-Du-i9g"/>
+                            <constraint firstItem="bA2-vn-WJn" firstAttribute="top" secondItem="ovc-DF-p7j" secondAttribute="bottom" constant="15" id="hjt-cC-Brf"/>
+                            <constraint firstItem="4cF-08-xmp" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="l5R-NS-p2f"/>
+                            <constraint firstItem="bA2-vn-WJn" firstAttribute="centerX" secondItem="ovc-DF-p7j" secondAttribute="centerX" id="ynl-MI-hzp"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="flag-icon" width="200" height="200"/>
+        <image name="splash" width="375" height="667"/>
+    </resources>
+</document>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="PBj-Gb-pp9"/>
+                            <visualEffectView opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JbQ-Z3-Ia8">
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="sEd-BY-Dop">
+                                    <frame key="frameInset"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JbQ-Z3-Ia8" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="CBO-hS-hWM"/>
+                            <constraint firstItem="PBj-Gb-pp9" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="FvW-pc-q6T"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="JbQ-Z3-Ia8" secondAttribute="bottom" id="MT3-3Z-CZp"/>
+                            <constraint firstAttribute="bottom" secondItem="PBj-Gb-pp9" secondAttribute="bottom" id="Q8P-xt-lPU"/>
+                            <constraint firstItem="PBj-Gb-pp9" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="bbO-UB-mnl"/>
+                            <constraint firstAttribute="trailing" secondItem="JbQ-Z3-Ia8" secondAttribute="trailing" id="mmD-56-Bzq"/>
+                            <constraint firstItem="JbQ-Z3-Ia8" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="mzZ-bP-HlV"/>
+                            <constraint firstAttribute="trailing" secondItem="PBj-Gb-pp9" secondAttribute="trailing" id="seB-NM-8Ph"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="wallpaper" width="960" height="540"/>
+    </resources>
+</document>

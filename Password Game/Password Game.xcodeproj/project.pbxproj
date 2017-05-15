@@ -1,0 +1,302 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4365FBC81D8497D700611B59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365FBC71D8497D700611B59 /* AppDelegate.swift */; };
+		4365FBCA1D8497D700611B59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365FBC91D8497D700611B59 /* ViewController.swift */; };
+		4365FBCD1D8497D700611B59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4365FBCB1D8497D700611B59 /* Main.storyboard */; };
+		4365FBCF1D8497D700611B59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4365FBCE1D8497D700611B59 /* Assets.xcassets */; };
+		4365FBD21D8497D700611B59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4365FBD01D8497D700611B59 /* LaunchScreen.storyboard */; };
+		4365FBDA1D849CFA00611B59 /* SegundoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365FBD91D849CFA00611B59 /* SegundoViewController.swift */; };
+		437E48F51D8D7E6E00B9DE23 /* IronMaiden.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 437E48F41D8D7E6E00B9DE23 /* IronMaiden.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4365FBC41D8497D700611B59 /* Password Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Password Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4365FBC71D8497D700611B59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4365FBC91D8497D700611B59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4365FBCC1D8497D700611B59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4365FBCE1D8497D700611B59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4365FBD11D8497D700611B59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4365FBD31D8497D700611B59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4365FBD91D849CFA00611B59 /* SegundoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegundoViewController.swift; sourceTree = "<group>"; };
+		437E48F41D8D7E6E00B9DE23 /* IronMaiden.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IronMaiden.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4365FBC11D8497D700611B59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4365FBBB1D8497D600611B59 = {
+			isa = PBXGroup;
+			children = (
+				4365FBC61D8497D700611B59 /* Password Game */,
+				4365FBC51D8497D700611B59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4365FBC51D8497D700611B59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4365FBC41D8497D700611B59 /* Password Game.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4365FBC61D8497D700611B59 /* Password Game */ = {
+			isa = PBXGroup;
+			children = (
+				4365FBC71D8497D700611B59 /* AppDelegate.swift */,
+				4365FBC91D8497D700611B59 /* ViewController.swift */,
+				4365FBCB1D8497D700611B59 /* Main.storyboard */,
+				437E48F41D8D7E6E00B9DE23 /* IronMaiden.jpg */,
+				4365FBD91D849CFA00611B59 /* SegundoViewController.swift */,
+				4365FBCE1D8497D700611B59 /* Assets.xcassets */,
+				4365FBD01D8497D700611B59 /* LaunchScreen.storyboard */,
+				4365FBD31D8497D700611B59 /* Info.plist */,
+			);
+			path = "Password Game";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4365FBC31D8497D700611B59 /* Password Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4365FBD61D8497D700611B59 /* Build configuration list for PBXNativeTarget "Password Game" */;
+			buildPhases = (
+				4365FBC01D8497D700611B59 /* Sources */,
+				4365FBC11D8497D700611B59 /* Frameworks */,
+				4365FBC21D8497D700611B59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Password Game";
+			productName = "Password Game";
+			productReference = 4365FBC41D8497D700611B59 /* Password Game.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4365FBBC1D8497D600611B59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Guihsoft;
+				TargetAttributes = {
+					4365FBC31D8497D700611B59 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 4365FBBF1D8497D600611B59 /* Build configuration list for PBXProject "Password Game" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4365FBBB1D8497D600611B59;
+			productRefGroup = 4365FBC51D8497D700611B59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4365FBC31D8497D700611B59 /* Password Game */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4365FBC21D8497D700611B59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4365FBD21D8497D700611B59 /* LaunchScreen.storyboard in Resources */,
+				4365FBCF1D8497D700611B59 /* Assets.xcassets in Resources */,
+				4365FBCD1D8497D700611B59 /* Main.storyboard in Resources */,
+				437E48F51D8D7E6E00B9DE23 /* IronMaiden.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4365FBC01D8497D700611B59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4365FBCA1D8497D700611B59 /* ViewController.swift in Sources */,
+				4365FBC81D8497D700611B59 /* AppDelegate.swift in Sources */,
+				4365FBDA1D849CFA00611B59 /* SegundoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4365FBCB1D8497D700611B59 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4365FBCC1D8497D700611B59 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4365FBD01D8497D700611B59 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4365FBD11D8497D700611B59 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4365FBD41D8497D700611B59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4365FBD51D8497D700611B59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4365FBD71D8497D700611B59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Password Game/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.guihsoft.Password-Game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4365FBD81D8497D700611B59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Password Game/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.guihsoft.Password-Game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4365FBBF1D8497D600611B59 /* Build configuration list for PBXProject "Password Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4365FBD41D8497D700611B59 /* Debug */,
+				4365FBD51D8497D700611B59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4365FBD61D8497D700611B59 /* Build configuration list for PBXNativeTarget "Password Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4365FBD71D8497D700611B59 /* Debug */,
+				4365FBD81D8497D700611B59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4365FBBC1D8497D600611B59 /* Project object */;
+}

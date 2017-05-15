@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Swift200_Day6_2_AutoLayoutPickerToolbar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1qf-tb-fKZ">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="qCY-ve-VHm"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="7Tn-zj-og3"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="1Bz-hB-DdH"/>
+                                </connections>
+                            </pickerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="val-Ec-2H4">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="destaque" translatesAutoresizingMaskIntoConstraints="NO" id="krR-oh-DfZ" userLabel="Image View Destaque">
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="krR-oh-DfZ" secondAttribute="height" multiplier="1:1" id="yml-1X-KGo"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="l1_0" translatesAutoresizingMaskIntoConstraints="NO" id="nDT-Xb-VRX" userLabel="Image View N1">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="7fL-S3-RHn"/>
+                                            <constraint firstAttribute="width" constant="200" id="Gav-Lf-ulJ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="l2_0" translatesAutoresizingMaskIntoConstraints="NO" id="Ofm-bd-ASi" userLabel="Image View N2">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="aeg-Rq-5rv"/>
+                                            <constraint firstAttribute="width" constant="200" id="nmy-yf-RRE"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="l3_0" translatesAutoresizingMaskIntoConstraints="NO" id="ace-wq-Sef" userLabel="Image View N3">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="FZM-LW-lkv"/>
+                                            <constraint firstAttribute="height" constant="200" id="J6o-ux-4s1"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.066666666669999999" green="0.18823529410000001" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="nDT-Xb-VRX" firstAttribute="centerY" secondItem="val-Ec-2H4" secondAttribute="centerY" id="DIb-cI-9R9"/>
+                                    <constraint firstItem="ace-wq-Sef" firstAttribute="centerX" secondItem="val-Ec-2H4" secondAttribute="centerX" constant="-1" id="FH9-oM-EEO"/>
+                                    <constraint firstItem="Ofm-bd-ASi" firstAttribute="centerY" secondItem="val-Ec-2H4" secondAttribute="centerY" id="TsH-Tl-rpU"/>
+                                    <constraint firstItem="Ofm-bd-ASi" firstAttribute="centerX" secondItem="val-Ec-2H4" secondAttribute="centerX" constant="-1" id="aYU-9W-Bn0"/>
+                                    <constraint firstItem="krR-oh-DfZ" firstAttribute="centerY" secondItem="val-Ec-2H4" secondAttribute="centerY" id="bnr-o3-ZI4"/>
+                                    <constraint firstItem="nDT-Xb-VRX" firstAttribute="centerX" secondItem="val-Ec-2H4" secondAttribute="centerX" id="fWo-cX-g1U"/>
+                                    <constraint firstItem="krR-oh-DfZ" firstAttribute="centerX" secondItem="val-Ec-2H4" secondAttribute="centerX" id="hzV-0K-rOc"/>
+                                    <constraint firstItem="ace-wq-Sef" firstAttribute="centerY" secondItem="val-Ec-2H4" secondAttribute="centerY" id="iDL-4E-5vB"/>
+                                    <constraint firstItem="krR-oh-DfZ" firstAttribute="width" secondItem="val-Ec-2H4" secondAttribute="width" multiplier="0.8" id="ozQ-hT-N3c"/>
+                                </constraints>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Twf-bV-bJr">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="g4S-ek-u0Z"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="GOg-4A-6Dz"/>
+                                    <barButtonItem image="Chicken Filled-50" id="1SI-MJ-bCM">
+                                        <connections>
+                                            <action selector="tapFrango:" destination="BYZ-38-t0r" id="eEm-El-Y31"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="Industrial Scales Filled-50" id="pVX-dm-eoq">
+                                        <connections>
+                                            <action selector="tapDiet:" destination="BYZ-38-t0r" id="Da7-lJ-osi"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="Natural Food Filled-50" id="8xE-tD-Yht">
+                                        <connections>
+                                            <action selector="tapSalada:" destination="BYZ-38-t0r" id="EBN-Jh-QRc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="Steak Medium Filled-50" id="78d-ht-b4o">
+                                        <connections>
+                                            <action selector="tapCarne:" destination="BYZ-38-t0r" id="MAT-Yh-tcv"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.18823529410000001" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Twf-bV-bJr" firstAttribute="top" secondItem="val-Ec-2H4" secondAttribute="bottom" id="9Hm-g9-tLd"/>
+                            <constraint firstItem="val-Ec-2H4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="64" id="MpG-5f-mRm"/>
+                            <constraint firstItem="val-Ec-2H4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aeK-tD-Ek3"/>
+                            <constraint firstItem="Twf-bV-bJr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gNW-At-RuK"/>
+                            <constraint firstAttribute="trailing" secondItem="val-Ec-2H4" secondAttribute="trailing" id="lP3-tS-E2Z"/>
+                            <constraint firstItem="1qf-tb-fKZ" firstAttribute="top" secondItem="Twf-bV-bJr" secondAttribute="bottom" id="mSc-zb-uX8"/>
+                            <constraint firstItem="1qf-tb-fKZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ncW-kw-p8I"/>
+                            <constraint firstAttribute="trailing" secondItem="Twf-bV-bJr" secondAttribute="trailing" id="uLj-IR-FSG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1qf-tb-fKZ" secondAttribute="bottom" id="wKy-xc-M7L"/>
+                            <constraint firstAttribute="trailing" secondItem="1qf-tb-fKZ" secondAttribute="trailing" id="wSg-xZ-OOy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="meuPicker" destination="1qf-tb-fKZ" id="ydR-zo-61L"/>
+                        <outlet property="nivelDois" destination="Ofm-bd-ASi" id="Rd7-Gj-ZAL"/>
+                        <outlet property="nivelTres" destination="ace-wq-Sef" id="yBv-pv-fm7"/>
+                        <outlet property="nivelUm" destination="nDT-Xb-VRX" id="fri-KG-wI5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Chicken Filled-50" width="25" height="25"/>
+        <image name="Industrial Scales Filled-50" width="25" height="25"/>
+        <image name="Natural Food Filled-50" width="25" height="25"/>
+        <image name="Steak Medium Filled-50" width="25" height="25"/>
+        <image name="destaque" width="350" height="350"/>
+        <image name="l1_0" width="133" height="133"/>
+        <image name="l2_0" width="133" height="133"/>
+        <image name="l3_0" width="133" height="133"/>
+    </resources>
+</document>

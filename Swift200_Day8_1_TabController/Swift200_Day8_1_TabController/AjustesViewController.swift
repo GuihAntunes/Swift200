@@ -17,12 +17,12 @@ class AjustesViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("Vai aparacer: Ajustes")
+        print("Vai aparecer: Ajustes")
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("Aparaceu: Ajustes")
+        print("Apareceu: Ajustes")
     }
     
     override func viewWillDisappear(_ animated: Bool) {

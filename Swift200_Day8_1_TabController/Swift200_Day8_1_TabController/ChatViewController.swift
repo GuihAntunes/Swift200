@@ -19,7 +19,7 @@ class ChatViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("Vai aparacer: Chat")
+        print("Vai aparecer: Chat")
         
         // Removendo a badge da tabBar
         // quando entro na tela

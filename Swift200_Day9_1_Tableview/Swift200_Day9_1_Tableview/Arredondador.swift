@@ -10,7 +10,7 @@ import UIKit
 
 class Arredondador: NSObject {
     
-    // @IBInspectable aviso o interface builder que essa variável pode
+    // @IBInspectable avisa o interface builder que essa variável pode
     // ser alterada no storyboard
     // Não pode ser Optional. Precisa de valor padrão
     @IBInspectable var raio:CGFloat     = 10
